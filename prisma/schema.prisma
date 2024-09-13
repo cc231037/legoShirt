@@ -56,7 +56,7 @@ model Configuration {
 model User {
   id    String  @id @default(cuid())
   email String
-  kindeId String?
+  kindeId String 
   Order Order[]
 
   createdAt DateTime @default(now())
@@ -89,8 +89,8 @@ model ShippingAddress {
   city String
   postalCode String
   country String
-  state String?
-  phoneNumber String?
+  state String? 
+  phoneNumber String? 
   orders Order[]
 }
 
@@ -101,7 +101,7 @@ model BillingAddress {
   city String
   postalCode String
   country String
-  state String?
-  phoneNumber String?
+  state String? 
+  phoneNumber String? 
   orders Order[]
 }

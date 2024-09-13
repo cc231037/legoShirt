@@ -21,6 +21,7 @@ export const getAuthStatus = async () => {
             data: {
                 id: user.id,
                 email: user.email,
+                kindeId: user.id,
             },
         })
     }
